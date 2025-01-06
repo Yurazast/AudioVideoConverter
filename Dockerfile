@@ -1,4 +1,5 @@
 FROM node:20
+LABEL org.opencontainers.image.source=https://github.com/Yurazast/AudioVideoConverter
 
 RUN apt-get update -qq && DEBCONF_NOWARNINGS=yes apt-get install -y ffmpeg > /dev/null
 
